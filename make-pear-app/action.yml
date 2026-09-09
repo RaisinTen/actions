@@ -223,8 +223,8 @@ runs:
       if: ${{ runner.os == 'macOS' }}
       run: |
         ditto -c -k --sequesterRsrc --keepParent \
-          out/Keet-Internal-mas-arm64/Keet-Internal.app \
-          out/Keet-Internal-mas-arm64.zip
+          out/Keet-mas-arm64/Keet.app \
+          out/Keet-mas-arm64.zip
       shell: bash
     - name: 'Upload standalone executable artifact'
       if: ${{ inputs.standalone != '' }}
